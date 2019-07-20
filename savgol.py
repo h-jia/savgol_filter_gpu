@@ -31,7 +31,7 @@ def savgol(data, order=2, width=5, h=2):
     return new_data
 
 
-s = torch.rand(100)
+s = torch.rand(150)
 plt.plot(s.numpy(), 'b')
 snew3 = savgol(s, 3, 13, 1)
 plt.plot(snew3.numpy(), 'y')
